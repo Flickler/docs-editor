@@ -1,8 +1,12 @@
-import Editor from "./editor"
+import Editor from "./components/editor"
+import { PrintButton } from "./components/print-button"
 
 function App() {
   return (
-    <Editor/>
+    <>
+      <Editor/>
+      <PrintButton/>
+    </>
   )
 }
 
