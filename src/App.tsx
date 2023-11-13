@@ -1,13 +1,13 @@
-import Editor from "./components/editor"
-import { PrintButton } from "./components/print-button"
+import EditorContainer from "./components/editor-container";
+import { PrintButton } from "./components/print-button";
 
 function App() {
   return (
     <>
-      <Editor/>
-      <PrintButton/>
+      <EditorContainer />
+      <PrintButton />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

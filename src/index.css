@@ -5,7 +5,7 @@
   --gray-100: hsl(217, 50%, 98%); /*BG Color*/
   --white: hsl(0, 0%, 100%);
   --black: hsl(217, 20%, 10%);
-  --shadow: 0 0 5px rgba(0, 0, 0, .125);
+  --shadow: 0 0 5px rgba(0, 0, 0, 0.125);
 }
 
 * {
@@ -19,99 +19,15 @@ body {
   margin: 0;
 }
 
-#editor .ql-editor {
-  width: 8.5in;
-  min-height: 11in;
-  padding: 1in;
-  margin: 1rem;
-  margin-top: 2rem;
-  box-shadow: var(--shadow);
-  background-color: var(--white);
-}
-
-#editor .ql-container.ql-snow {
-  border: none;
-  display: flex;
-  justify-content: center;
-}
-
-#editor .ql-toolbar.ql-snow {
-  display: flex;
-  justify-content: center;
-  position: sticky;
-  top: 1rem;
-  z-index: 1;
-  background-color: var(--gray-200);
-  margin-inline: 2rem;
-  border-radius: 1.5rem;
-}
-
-#editor .ql-toolbar:hover{
-  box-shadow: var(--shadow);
-  transition: all .4s ease;
-}
-
-#editor .ql-formats{
-  padding: 2px;
-  border-radius: 4px;
-  position: relative;
-}
-
-#editor .ql-formats:hover::after{
-  font-size: .675rem;
-  color: var(--white);
-  background-color: var(--black);
-  padding: .25rem;
-  border-radius: .25rem;
-
-  position: absolute;
-  top: 125%;
-  left: 25%;
-  z-index: 2;
-  animation: slide .3s ease;
-}
-
-#editor .ql-formats:nth-child(1):hover::after{
-  content: 'Tamanho';
-}
-#editor .ql-formats:nth-child(2):hover::after{
-  content: 'Fonte';
-}
-#editor .ql-formats:nth-child(3):hover::after{
-  content: 'Lista';
-}
-#editor .ql-formats:nth-child(4):hover::after{
-  content: 'Formatação';
-}
-#editor .ql-formats:nth-child(5):hover::after{
-  content: 'Cores';
-}
-#editor .ql-formats:nth-child(6):hover::after{
-  content: 'Indicadores';
-}
-#editor .ql-formats:nth-child(7):hover::after{
-  content: 'Alinhamento';
-}
-#editor .ql-formats:nth-child(8):hover::after{
-  content: 'Especiais';
-}
-#editor .ql-formats:nth-child(9):hover::after{
-  content: 'Limpar';
-}
-
-#editor .ql-formats:hover{
-  background-color: var(--gray-300);
-}
-
-.ant-float-btn-circle:hover .anticon{
+.ant-float-btn-circle:hover .anticon {
   color: var(--white);
 }
 
-.ant-float-btn-circle:hover{
+.ant-float-btn-circle:hover {
   background-color: var(--accent-color);
   border: 1px solid var(--accent-color);
-  transform: scale(.9);
-  transition: all .4s ease;
+  transform: scale(0.9);
+  transition: all 0.4s ease;
 }
 
 @page {
@@ -137,7 +53,6 @@ body {
   .ant-tooltip {
     display: none !important;
   }
-
 }
 
 @keyframes slide {
