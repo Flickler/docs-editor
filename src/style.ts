@@ -84,4 +84,19 @@ export const Editor = styled.div`
   .ql-formats:hover {
     background-color: var(--gray-300);
   }
+
+  @media print {
+    .ql-editor {
+      width: 6.5in;
+      min-height: none;
+      margin: 0;
+      padding: 0;
+      box-shadow: none;
+      align-self: flex-start;
+    }
+
+    .ql-toolbar.ql-snow {
+      display: none !important;
+    }
+  }
 `;
